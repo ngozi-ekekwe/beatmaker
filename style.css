@@ -80,13 +80,13 @@ svg {
 }
 
 .kick-pad.active {
-  background-color: black;
+  background-color: rgb(85, 4, 85);
 }
 .snare-pad.active {
-  background-color: black;
+  background-color: rgb(43, 98, 100);
 }
 .hihat-pad.active {
-  background-color: black;
+  background-color: #80213a;
 }
 
 .hihat-track,
