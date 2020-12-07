@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="page-header">
+      <h1 class="rainbow">Beat Maker</h1>
+      <span>🔊</span>
+    </div>
     <div class="sequencer">
       <div class="kick-track">
         <div class="controls">
@@ -65,7 +69,6 @@
           <div class="pad snare-pad b7"></div>
         </div>
       </div>
-
       <div class="hihat-track">
         <div class="controls">
           <h1 class="title">Hihat</h1>
@@ -88,11 +91,17 @@
           <div class="pad hihat-pad b7"></div>
         </div>
       </div>
-      <button class="play">Play</button>
+      <button class="play">Play <span>
+        <i class="fas fa-play"></i>
+      </span></button>
     </div>
+    <footer>
+      <a href="https://github.com/ngozi-ekekwe">GH</a>
+    </footer>
     <audio class="kick-sound" src="./sounds/hihat-acoustic01.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
     <audio class="hihat-sound" src="./sounds/kick-classic.wav"></audio>
     <script src="./app.js"></script>
   </body>
+
 </html>

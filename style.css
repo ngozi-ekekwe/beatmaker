@@ -8,12 +8,55 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  height: 2rem;
+}
+
+footer a {
+  color: grey;
+}
+
+.page-header {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h1.rainbow {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 1rem;
+  background-image: linear-gradient(
+    90deg,
+    #f79533 0%,
+    #f37055 15%,
+    #ef4e7b 30%,
+    #a166ab 44%,
+    #5073b8 58%,
+    #1098ad 72%,
+    #07b39b 86%,
+    #6dba82 100%
+  );
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 i,
 svg {
   pointer-events: none;
 }
 
-.kick-pad, .snare-pad, .hihat-pad {
+.kick-pad,
+.snare-pad,
+.hihat-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
@@ -21,40 +64,44 @@ svg {
 }
 
 .kick-pad {
-  background: rgb(8, 165, 125);
+  background: purple;
 }
 
 .snare-pad {
-  background: pink;
+  background: cadetblue;
 }
 
 .hihat-pad {
-  background: red;
+  background: #a07f88;
 }
 
 .pad {
-  transition: 'all 0.5s ease';
+  transition: "all 0.5s ease";
 }
 
 .kick-pad.active {
-  background-color: black
+  background-color: black;
 }
 .snare-pad.active {
-  background-color: black
+  background-color: black;
 }
 .hihat-pad.active {
-  background-color: black
+  background-color: black;
 }
 
-.hihat-track, .kick-track, .snare-track {
+.hihat-track,
+.kick-track,
+.snare-track {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
   margin-top: 5rem;
 }
 
-.hihat, .kick, .snare {
+.hihat,
+.kick,
+.snare {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,8 +111,7 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 12rem - 3rem);
 }
 
 .controls {
@@ -77,27 +123,49 @@ svg {
 }
 
 .controls button {
-  padding: 1rem;
+  border-radius: 8px;
+  background-color: rgba(13, 12, 34, 0.05);
   border: none;
-  background: red;
-  color: white;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: 'all 0.5s ease';
+  transition: "all 0.5s ease";
+  padding: 0 24px;
+  height: 50px;
 }
 
 .play {
   padding: 1rem 2rem;
-  font-size: 1rem;
-  background: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
   border: none;
-  margin: 0 3rem;
+  margin: 2rem 0rem;
+  color: #ff813f;
+  background-color: snow;
+  border: 1px solid rgba(255,129,63,.5);
+  transition: all 0.5s ease;
+  height: 50px;
+}
+
+.play span {
+  font-size: 1rem;
+  padding-left: .5rem;
+}
+
+.play:hover {
+  background: #ff813f;
+  color: snow;
 }
 
 select {
-  padding: 1rem;
+  border-radius: 8px;
+  padding: 0 24px;
+  border-color: rgba(13, 12, 34, 0.05);
+  border: 2px solid rgba(13, 12, 34, 0.05);
+  font-weight: bold;
+  height: 50px;
   margin-left: 1rem;
   font-size: 1rem;
 }
-
